@@ -20,4 +20,4 @@ def convert():
     return send_file(output, mimetype='application/zip', as_attachment=True, download_name='pages.zip')
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
